@@ -1,0 +1,59 @@
+:root {
+    --cubeColor: rgba(255, 140, 0, 0.562);
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    perspective: 10em;
+    perspective-origin: 50% calc(50 - 2em); /*look into calc function*/
+}
+
+.scene {
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.ball {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: violet;
+    position: absolute;
+    left: -.5em;
+    bottom: 1em;
+}
+
+.cube {
+    width: 2em;
+    height: 2em;
+    background-color: var(--cubeColor);
+    position: absolute;
+    top: -1em;
+    left: -1em;
+}
+
+.cube >* .leftSide .rightSide .top .bottom {
+        position: abosoute;
+        width
+    }
+
+
+.floor {
+    width: 10em;
+    height: 10em;
+    background-image: 
+        repeating-conic-gradient(from 45deg,
+        rgb(78, 78, 78) 0deg 90deg,
+        rgb(58, 58, 58) 90deg 180deg);
+    background-size: 1em 1em;
+    position: absolute;
+    transform: 
+        translate(-50%, -50%);
+        rotate: 90deg, 0deg, 0deg;
+    top: 1em;
+}
